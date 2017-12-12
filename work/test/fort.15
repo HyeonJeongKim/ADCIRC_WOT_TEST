@@ -1,0 +1,94 @@
+Island barrier Type Test                 ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION
+9day                                     ! 24 CHARACTER ALPHANUMERIC RUN IDENTIFICATION
+1                                        ! NFOVER - NONFATAL ERROR OVERRIDE OPTION
+1                                        ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER
+1                                        ! NSCREEN - OUTPUT TO UNIT 6 PARAMETER
+0                                        ! IHOT - HOT START OPTION PARAMETER 
+2                                        ! ICS - COORDINATE SYSTEM OPTION PARAMETER
+0                                        ! IM - MODEL RUN TYPE: 0,10,20,30 = 2DDI, 1,11,21,31 = 3D(VS), 2 = 3D(DSS)
+1                                        ! NOLIBF - NONLINEAR BOTTOM FRICTION OPTION
+2                                         ! NOLIFA - OPTION TO INCLUDE FINITE AMPLITUDE TERMS
+1                                        ! NOLICA - OPTION TO INCLUDE CONVECTIVE ACCELERATION TERMS
+1                                        ! NOLICAT - OPTION TO CONSIDER TIME DERIVATIVE OF CONV ACC TERMS
+1                                        ! NWP - Number of nodal attributes.
+mannings_n_at_sea_floor 
+1                                        ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER
+0                                        ! NTIP - TIDAL POTENTIAL OPTION PARAMETER
+319  1                                   ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PARAMETER
+1                                        ! NRAMP - RAMP FUNCTION OPTION
+9.81                                     ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS
+0.00230                                  ! TAU0 - WEIGHTING FACTOR IN GWCE
+0.5                                        ! DT - TIME STEP (IN SECONDS)
+0.00000                                  ! STATIM - STARTING SIMULATION TIME IN DAYS
+0.00000                                  ! REFTIME - REFERENCE TIME (IN DAYS) FOR NODAL FACTORS AND EQUILIBRIUM ARGS
+2010 08 29 00 01 0.7 600
+5.25          			                       ! RNDAY - TOTAL LENGTH OF SIMULATION (IN DAYS)
+0.25                                        ! DRAMP - DURATION OF RAMP FUNCTION (IN DAYS)
+0.350000 0.300000 0.350000               ! TIME WEIGHTING FACTORS FOR THE GWCE EQUATION
+0.010000 12 12 0.010000                  ! H0 - MINIMUM WATER DEPTH
+126 34                                        ! SLAM0, SFEA0 - LONGITUDE AND LATITUDE ON WHICH THE CPP COORDINATE PROJECTION IS CENTERED
+0.002500 1.000000 10.000000 0.333333     ! FFACTOR - 2DDI BOTTOM FRICTION COEFFICIENT
+10.000000                                 ! EVM - SPATIALLY CONSTANT HORIZONTAL EDDY VISCOSITY FOR THE MOMENTUM EQUATIONS
+0.000000                                 ! CORI - CONSTANT CORIOLIS COEFFICIENT
+0                                        ! NTIF - NUMBER OF TIDAL POTENTIAL CONSTITUENTS
+1                                       ! NBFR - NUMBER OF PERIODIC FORCING FREQUENCIES ON ELEVATION SPECIFIED BOUNDARIES                   
+M2                                       ! BOUNTAG - FORCING CONSTITUENT NAME                                                       
+1.405189027399357e-04  1     0       ! CONST. FREQ. (Hz*2*pi), NODAL FACTOR, EQUIL. ARG.                                 
+M2
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0.  
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+2.9	0. 
+100                                      ! ANGINN - MINIMUM ANGLE FOR TANGENTIAL FLOW
+0 0.0 15 3600                             ! NOUTE, TOUTSE, TOUTFE, NSPOOLE - FORT 61 OPTIONS
+0                                         ! NSTAE - NUMBER OF ELEVATION RECORDING STATIONS, FOLLOWED BY LOCATIONS ON PROCEEDING LINES
+0 0.0 15 3600                            ! NOUTV, TOUTSV, TOUTFV, NSPOOLV - FORT 62 OPTIONS
+0                                      ! NSTAV - NUMBER OF VELOCITY RECORDING STATIONS, FOLLOWED BY LOCATIONS ON PROCEEDING LINES   
+0 0.0 15 3600                            ! NOUTV, TOUTSV, TOUTFV, NSPOOLV - FORT 62 OPTIONS
+0
+1 0.0 5.25 3600                 ! NOUTGE, TOUTSGE, TOUTFGE, NSPOOLGE - GLOBAL ELEVATION OUTPUT INFO (UNIT 63)
+1 0.0 5.25 3600                 ! NOUTGV, TOUTSGV, TOUTFGV, NSPOOLGV - GLOBAL VELOCITY OUTPUT INFO (UNIT 64)
+1 0.0 5.25 3600                 ! NOUTGV, TOUTSGV, TOUTFGV, NSPOOLGV - GLOBAL VELOCITY OUTPUT INFO (UNIT 64)
+2                                        ! NHARF -  NUMBER OF FREQENCIES IN HARMONIC ANALYSI S                                                                                                                                                                                                                                                                                                                                                 
+STEADY                                   ! HAFNAM - ALPHA DESCRIPTOR FOR CONSTITUENT NAM E                                                                                                                                                                                                                                                                                                                                                     
+0.000000000000000  1.0  0.0              ! FREQUENCY, NODAL FACTOR, EQUILIBRIUM ARGUMENT (DEG)                                                                                                                                                                                                                                                                                                                                                 
+M2                                      
+1.405189027399357e-04  1    0
+0 7.0 8 0.0                             ! THAS,THAF,NHAINC,FMV - HARMONIC ANALYSIS PARAMETER S
+0 0 0 0                                 ! NHASE,NHASV,NHAGE,NHAGV - CONTROL HARMONIC ANALYSIS AND OUTPUT TO UNITS 51,52,53,54
+0 10800                                 ! NHSTAR,NHSINC - HOT START FILE GENERATION PARAMETER S
+1 0 2.98E-5 25                          ! ITITER, ISLDIA, CONVCR, ITMAX - ALGEBRAIC SOLUTION PARAMETERS
